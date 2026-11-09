@@ -97,4 +97,3 @@ print(accuracy_score(gender_submission['Survived'], y_pred)) #Accuracy Score com
 
 
 
-
