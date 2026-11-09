@@ -22,6 +22,7 @@ median=train_data['Age'].median()
 train_data['Age']=train_data['Age'].fillna(median)
 print(f"Filled missing Age values with the training median: {median}")
 
+ # Filled the N/A values in Embarked column with the mode, so that there is no skewed distribution, as its a categorical variable
 train_data['Embarked']=train_data['Embarked'].fillna(train_data['Embarked'].mode()[0]) 
 mode=train_data['Embarked'].mode()[0]
 train_data['Embarked']=train_data['Embarked'].fillna(mode)
